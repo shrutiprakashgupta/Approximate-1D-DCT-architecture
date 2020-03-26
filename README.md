@@ -6,4 +6,4 @@ The Xilinx Vivado Design Suite (Vivado 2019.1) was used for HDL sysnthesis and a
 # Customised Input:
 Testbench input generation: <br/>The input sequence is provided as a text file. Run the python script gen_in.py to generate the input .txt file. The module takes a csv file as input, whose elements are 8 bit binary representation of the elements (8 in each row).<br/> Check out the given input files in the examples folder for more clarification. <br/>Note: This specific pattern guides the order in which the instructions are given to the pipeline. 
 # Pipelined Execution:
-The inputs are provided in a specific sequence to the pipeline and the Null operations mark the clock cycles in which the next level computations would be performed. <br/>Refer to the diagram below, the 
+The inputs are provided in a specific sequence to the pipeline and the Null operations mark the clock cycles in which the Stage II computations would be performed. <br/>Refer to the diagram below ![](images/DCT_arch.png)
