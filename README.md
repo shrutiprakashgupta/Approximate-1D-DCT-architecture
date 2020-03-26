@@ -13,5 +13,10 @@ The inputs are provided in a specific sequence to the pipeline and the Null oper
 ![](images/Pipeline_sim.JPG)<br/>In the first 8 clock cycles, the pipeline is not filled completely and no final output is generated until the 9th cycle. (This additional cycle results due to the fact that the operation is performed on the negative clock edge while the output is rendered at the positive clock edge). <br/>![](images/Pipeline_fill.JPG)<br/>Once the pipeline is full, the NULL operations are covered by the Stage II operations and a continuous sequence of outputs is generated without wasting any clock cycle. 
 # Output: 
 Reading the output sequence: <br/>A fair idea of the output sequence can be gained by the input order, shifted by 9 clock cycles (which do not produced output in the beginning). Moreover, for the stage II computations, pertaining to the approximate design, the last bit is ignored in the calculations and can be read from the LSB signal output in the same sequence. 
+# Goals:
+-[x] Design 1D DCT architecture 
+-[ ] Add the transpose module
+-[ ] Extend the design to 2D DCT architecture
+-[ ] Incorporate the scaling factors to finalize the approximate design
 # Conclusion:
 This pipelined architecture computes the 8 DCT coefficients of the 8 elements provided into the 2's complement binary form and the output signals can further be used in other circuits using synchronization and extension of the counter. 
