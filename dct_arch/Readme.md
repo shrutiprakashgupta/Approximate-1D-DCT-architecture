@@ -1,1 +1,1 @@
-
+This folder contains all Verilog modules. They are created as the Design source in the Vivado Design Suite. <br/> The top module is Pipeline_add while rest are either called from it (as the serial_add module) or support is by running in parallel (as the counter).  
